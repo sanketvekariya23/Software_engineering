@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(15, 9, 39);
+  background: radial-gradient(
+    circle,
+    rgba(15, 9, 39, 1) 31%,
+    rgba(24, 56, 94, 1) 100%
+  );
+}
+
+section {
+  display: grid;
+  place-items: center;
+}
+
+.collage-name {
+  padding: 1rem 0 1rem 2rem;
+  background-color: rgb(25, 125, 192);
+  width: 100vw;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  line-height: 2.5rem;
+}
+
+.full-card {
+  margin-top: 10rem;
+  width: 60rem;
+  display: flex;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(188, 21, 21); */
+  column-gap: 8rem;
+}
+
+img {
+  height: 18rem;
+  width: 26rem;
+  border-radius: 0.5rem;
+}
+
+.Left-Side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.peregraph {
+  margin: 1rem 0;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+
+button {
+  margin: 1rem 0 0 0;
+  padding: 0.5rem 2rem;
+  color: white;
+  border-style: none;
+  background-color: rgb(27, 194, 27);
+  border-radius: 0.3rem;
+  font-size: large;
+  font-weight: bolder;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#all-right {
+  margin-top: 8rem;
+  font: bolder;
+  color: white;
+  font-family: "Inter", sans-serif;
+}

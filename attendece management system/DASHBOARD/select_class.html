@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial- scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Inter:wght@200;300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="full-Dashboard">
+
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <span class="fs-4" style="font-weight: bold;">GECM System</span>
+
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary">
+                        <a href="./dashboard.html" style="color: #fff; text-decoration: none">
+            
+                          Dashboard</button>
+                        </a>
+                    </svg>
+
+
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">Profile</button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">Attendance</button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">class-report</button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">Student-report</button>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary">Sign-Out</button>
+
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="right-menu">
+                <!-- <img src="Icon/icons8-menu-64.png" alt="menu" class="menu-bar"> -->
+            </div>
+
+            <div class="card">
+                <div class="card-header" style="font-weight: bold;">
+                    Mark Attendance
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">SELECT CLASS</h6>
+                    <p class="card-text">Date</p>
+                    <div class="md-form md-outline input-with-post-icon datepicker" id="customDays">
+                        <input placeholder="Select date" type="date" id="Customization" class="form-control">
+
+                        <i class="fas fa-calendar input-prefix" tabindex=0></i>
+                    </div>
+                    <p class="form-select-title">Select Your Relevent Class</p>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Computer Engineering - Sem 5 - ADA</option>
+                        <option value="2">Computer Engineering - Sem 4 - PDS</option>
+                        <option value="3">Computer Engineering - Sem 3 - Data Structures</option>
+                    </select>
+                    <a href="./mark.html" class="btn btn-primary">
+                        <p class="btn-text">See Student's List</p>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script>
+        // Data Picker Initialization
+        $('.datepicker').datepicker({
+            inline: true
+        });
+    </script>
+</body>
+
+</html>
